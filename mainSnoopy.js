@@ -15,7 +15,7 @@ function createWindow () {
 
     //win.loadFile('snoopIndex.html')
     win.loadFile(path.join(__dirname, 'snoopyIndex.html')) // makes window load up the snoopy html file
-    win.webContents.openDevTools() // shows console errors
+    //win.webContents.openDevTools() // shows console errors/ opens devtools auto
 }
 // makes sure to run when everything is ready, prevents jumping the gun
 app.whenReady().then(createWindow)
