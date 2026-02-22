@@ -4,7 +4,7 @@
   "description": "(A fun snoopy project for someone important to me)",
   "main": "mainSnoopy.js",
   "scripts": {
-    "start": "electron",
+    "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
