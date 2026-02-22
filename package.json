@@ -1,0 +1,19 @@
+{
+  "name": "project-snoopy",
+  "version": "1.0.0",
+  "description": "(A fun snoopy project for someone important to me)",
+  "main": "mainSnoopy.js",
+  "scripts": {
+    "start": "electron",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "n"
+  },
+  "author": "Julian Aguirre :)",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "40.6.0"
+  }
+}
