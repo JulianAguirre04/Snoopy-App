@@ -5,6 +5,7 @@ const messages = ["Hi!!!","I missed you!","test 3","wanna know who did 911","Ig 
 // The DOM elements ;)
 const button = document.getElementById('new-message') // button ID
 const messageEl = document.getElementById('messages') // message ID
+const exit = document.getElementById('exit-button')
 
 // random funciton
 function randomFrom(arr) {
@@ -13,4 +14,8 @@ function randomFrom(arr) {
 
 button.addEventListener('click', (e) => {
     messageEl.textContent = randomFrom(messages) // button listener to activate my messages
+})
+
+exit.addEventListener('click', (e) => {
+    window.close()
 })
