@@ -4,8 +4,12 @@ const path = require('path') // setting up bas requirments and paths
 
 function createWindow () {
     const win = new BrowserWindow({
-        width: 800,
-        height: 600,
+        width: 350,
+        height: 450,
+        frame: false,
+        alwaysOnTop: true,
+        resizable: false,
+        transparent: true,
         webPreferences: {
             //preload: path.join(__dirname, 'mainSnoopy.js'),
             nodeIntegration: true,
