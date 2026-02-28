@@ -133,4 +133,18 @@ animation: skeleton-shimmer 1.4s infinite;
  
 }
 
+.eye-1{
+  width:8px;
+  height:15px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 35px;
+  right: 120px;
+  z-index: 5;
+}
+
+.eye-2{
+
+}
 /*npm start
