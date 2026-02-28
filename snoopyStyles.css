@@ -1,0 +1,135 @@
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #ee8ebe, #ffc0cb);
+  position:relative;
+  font-family: "Comic Sans MS", system-ui, sans-serif;
+}
+
+#buttons{
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.new-message{
+  color: black;
+  border: ridge;
+  height: 30px;
+  width: 70px;
+  bottom: 1px;
+  right: 100px;
+  position: absolute;
+  border-radius: 25px;
+  cursor: pointer;
+  border-color: black;
+  background: linear-gradient(
+  90deg,
+  rgba(255,255,255,0.08),
+  rgba(255,255,255,0.18),
+  rgba(255,255,255,0.08)
+);
+background-size: 200% 100%;
+animation: skeleton-shimmer 1.4s infinite;
+-webkit-app-region: no-drag;
+}
+.exit-button{
+  color: black;
+  border: ridge;
+  height: 30px;
+  width: 70px;
+  bottom: 1px;
+  left: 100px;
+  position: absolute;
+  border-radius: 25px;
+  cursor: pointer;
+  border-color: black;
+  background: linear-gradient(
+  90deg,
+  rgba(255,255,255,0.08),
+  rgba(255,255,255,0.18),
+  rgba(255,255,255,0.08)
+);
+background-size: 200% 100%;
+animation: skeleton-shimmer 1.4s infinite;
+-webkit-app-region: no-drag;
+}
+
+#snoopy-container{
+  position: absolute;
+  bottom: 120px;
+  right: 50px;
+}
+
+
+#snoopground{
+  position: relative;
+  display: block;
+  width: 260px;   /* give space for the full head/body */
+  height: 200px;
+  background: transparent;   /* or remove this line */
+  border-radius: 0;        
+  -webkit-app-region: no-drag;
+}
+
+
+
+/* Snoopy character alone */
+/* #snoopy-alone {
+  font-size: 6rem;          /* big Snoopy */
+/*   text-shadow: 0 8px 18px rgba(0, 0, 0, 0.35); /* subtle “standing” shadow */
+/*   cursor: move;             /* suggests you can drag him */
+/* }
+
+
+/* The man himself snoopy */
+.head{
+  width: 130px;
+  height: 70px;
+  background: ghostwhite;
+  border-radius: 70px 70px 60px 60px;
+  position: absolute;
+  top: 20px;
+  left: 60px;
+  -webkit-app-region: drag; /* whole window draggable for now */
+}
+
+
+.top-head{
+  width: 65px;
+  height: 55px;
+  background: ghostwhite;
+  border-radius: 70px 70px 60px 60px;
+  position: absolute;
+  top: 5px;
+  left: 125px;
+}
+
+
+.ears{
+  width: 55px;
+  height: 70px;
+  background: black;
+  border-radius: 70px 70px 60px 60px;
+  position: absolute;
+  top: 25px;
+  left: 145px;
+  z-index: 2;
+}
+
+
+.nose{
+  width:20px;
+  height:20px;
+  background: black;
+  border-radius: 70px 70px 60px 60px;
+  position: absolute;
+  top: 40px;
+  left: 170px;
+  z-index: 5;
+ 
+}
+
+/*npm start
