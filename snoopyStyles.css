@@ -93,7 +93,8 @@ animation: skeleton-shimmer 1.4s infinite;
   position: absolute;
   top: 20px;
   left: 60px;
-  /* -webkit-app-region: drag; /* whole window draggable for now */
+  z-index: 1;
+  -webkit-app-region: drag; /* whole window draggable for now */
 }
 
 
@@ -124,10 +125,10 @@ animation: skeleton-shimmer 1.4s infinite;
   width:20px;
   height:20px;
   background: black;
-  border-radius: 70px 70px 60px 60px;
+  border-radius: 50%;
   position: absolute;
   top: 40px;
-  left: 170px;
+  right: 190px;
   z-index: 5;
  
 }
