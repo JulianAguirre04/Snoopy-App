@@ -14,7 +14,7 @@ body {
   transform: translateX(-50%);
 }
 
-.new-message{
+#new-message{
   color: black;
   border: ridge;
   height: 30px;
@@ -35,7 +35,7 @@ background-size: 200% 100%;
 animation: skeleton-shimmer 1.4s infinite;
 -webkit-app-region: no-drag;
 }
-.exit-button{
+#exit-button{
   color: black;
   border: ridge;
   height: 30px;
@@ -93,7 +93,7 @@ animation: skeleton-shimmer 1.4s infinite;
   position: absolute;
   top: 20px;
   left: 60px;
-  -webkit-app-region: drag; /* whole window draggable for now */
+  /* -webkit-app-region: drag; /* whole window draggable for now */
 }
 
 
