@@ -144,10 +144,10 @@ animation: skeleton-shimmer 1.4s infinite;
   z-index: 5;
 }
 
-.eye-2{
+/*.eye-2{
 
 }
-
+*/
 .smile{
   width: 55px;
   height: 20px;
@@ -159,5 +159,17 @@ animation: skeleton-shimmer 1.4s infinite;
 position: absolute;
   transform: rotate(-10deg);
   z-index: 6;
+}
+
+.body{
+  width: 100px;
+  height: 100px;
+  background: ghostwhite;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(135deg); 
+  left: 90px;
+  top: 125px;
+  position: absolute;
+  
 }
 /*npm start
