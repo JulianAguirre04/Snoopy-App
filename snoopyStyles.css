@@ -172,4 +172,25 @@ position: absolute;
   position: absolute;
   
 }
+
+.collar{
+  width: 60px;
+  height: 20px;
+  border-radius: 70px 70px 60px 60px;
+  background: red;
+  left:110px;
+  top:100px;
+  position: absolute;
+  z-index: 4;
+}
+
+.neck{
+  width:30px;
+  height:40px;
+  border-radius: 70px 70px 60px 60px;
+  background: ghostwhite;
+  position: absolute;
+  left:125px ;
+  top:85px ;
+}
 /*npm start
