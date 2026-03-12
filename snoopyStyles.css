@@ -57,6 +57,54 @@ animation: skeleton-shimmer 1.4s infinite;
 -webkit-app-region: no-drag;
 }
 
+#messages{
+  position: absolute;
+  bottom: 300px;           /* adjust to sit above Snoopy */
+  right: 230px;            /* tweak so tail points to his head */
+  max-width: 220px;
+
+  padding: 10px 16px;
+  background: #ffffff;
+  border: 3px solid #000;
+  border-radius: 18px;     /* pill-ish corners, Peanuts-style */
+
+  font-family: "Comic Sans MS", system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.3;
+  color: #000;
+
+  box-shadow: 3px 3px 0 #000; /* slight offset to feel drawn */
+}
+
+#messages::after {
+  content: "";
+  position: absolute;
+  bottom: -14px;      /* hangs under the bubble */
+  right: 20px;        /* move left/right to aim at Snoopy’s mouth */
+
+ /*transform: rotate(345deg);*/
+  width: 0;
+  height: 0;
+  border-width: 14px 10px 0 10px; /* height, width */
+  border-style: solid;
+  border-color: #ffffff transparent transparent transparent; /* white interior */
+}
+
+/* black outline behind the white tail to match the border */
+#messages::before {
+  content: "";
+  position: absolute;
+  bottom: -17px;
+  right: 20px;
+
+ /* transform: rotate(345deg);*/
+  width: 0;
+  height: 0;
+  border-width: 17px 12px 0 12px;
+  border-style: solid;
+  border-color: #000 transparent transparent transparent; /* black border */
+}
+
 #snoopy-container{
   position: absolute;
   bottom: 120px;
@@ -70,9 +118,10 @@ animation: skeleton-shimmer 1.4s infinite;
   width: 260px;   /* give space for the full head/body */
   height: 200px;
   background: transparent;   /* or remove this line */
-  border-radius: 0;        
+  border-radius: 0;       
   -webkit-app-region: no-drag;
 }
+
 
 
 
@@ -219,19 +268,38 @@ position: absolute;
 }
 
 .arm{
-  width: 28px;
-  height: 80px;
-  background-color: ghostwhite;
-  top: 45%;
-  left: 33%;
-  transform: rotate(13deg);
-  border-top-left-radius: 80%;
-  border-bottom-left-radius: 90%;
-  border-bottom-right-radius: 20%;
-  border: 0.5px solid #000;
   position: absolute;
-  left:125px ;
-  top: 130px;
+  left: 125px;       /* keep your position and tweak by eye */
+  top: 135px;
+  width: 26px;
+  height: 55px;      /* shorter arm */
 
+  background: ghostwhite;
+
+  /* round tube shape */
+  border-radius: 50px 50px 40px 40px;
+
+  /* angle slightly forward */
+  transform: rotate(15deg);
+
+  /* thick cartoon outline */
+  border: 3px solid black;
+
+  /* keep it above the body but below collar */
+  z-index: 4;
+}
+
+.arm::after {
+  content: "";
+  position: absolute;
+  left: -5px;      /* moves slightly left to look like fingers */
+  bottom: -8px;    /* hangs below the arm */
+  transform: rotate(145deg);
+
+  width: 34px;
+  height: 20px;
+  background: ghostwhite;
+  border-radius: 50px;
+  border: 3px solid black;
 }
 /*npm start*/
