@@ -94,6 +94,7 @@ animation: skeleton-shimmer 1.4s infinite;
   top: 20px;
   left: 60px;
   z-index: 1;
+  /*border: 0.5px solid #000;*/
   -webkit-app-region: drag; /* whole window draggable for now */
 }
 
@@ -170,7 +171,7 @@ position: absolute;
   left: 90px;
   top: 125px;
   position: absolute;
-  
+  /*border: 0.5px solid #000; */
 }
 
 .collar{
@@ -192,5 +193,45 @@ position: absolute;
   position: absolute;
   left:125px ;
   top:85px ;
+  /*border: 0.5px solid #000;*/
 }
-/*npm start
+/* fix/work on neck it looks a little wonky rn*/
+.front-leg{
+  width: 25px;
+  height: 50px;
+  background: ghostwhite;  
+  position: absolute;
+  left:138px ;
+  top: 200px;
+}
+
+.front-foot{
+  width: 60px;
+  height: 35px;
+  background-color: ghostwhite;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+  position: absolute;
+  left:110px ;
+  top: 235px;
+}
+
+.arm{
+  width: 28px;
+  height: 80px;
+  background-color: ghostwhite;
+  top: 45%;
+  left: 33%;
+  transform: rotate(13deg);
+  border-top-left-radius: 80%;
+  border-bottom-left-radius: 90%;
+  border-bottom-right-radius: 20%;
+  border: 0.5px solid #000;
+  position: absolute;
+  left:125px ;
+  top: 130px;
+
+}
+/*npm start*/
