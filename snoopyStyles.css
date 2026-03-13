@@ -487,40 +487,33 @@ position: absolute;
 
 .arm{
   position: absolute;
-  left: 125px;       /* keep your position and tweak by eye */
-  top: 135px;
-  width: 26px;
-  height: 55px;      /* shorter arm */
-
+  left: 122px;
+  top: 138px;
+  width: 22px;
+  height: 60px;
   background: ghostwhite;
-
-  /* round tube shape */
-  border-radius: 50px 50px 40px 40px;
-
-  /* angle slightly forward */
-  transform: rotate(15deg);
-
-  /* thick cartoon outline */
-  border-left: 2px solid lightgray;
-  border-right: 2px solid lightgray;
-
-  /* keep it above the body but below collar */
+  border-radius: 40px 40px 50px 50px;
+  transform: rotate(18deg);
+  border: 3px solid black;
+  border-radius: 40px 40px 50px 50px;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  border-top: 1px solid lightgray;
   z-index: 4;
 }
 
 .arm::after {
   content: "";
   position: absolute;
-  left: -4px;      /* moves slightly left to look like fingers */
-  bottom: -0px;    /* hangs below the arm */
-  transform: rotate(145deg);
-
-  width: 34px;
-  height: 20px;
+  left: -10px;
+  bottom: -6px;
+  width: 36px;
+  height: 22px;
   background: ghostwhite;
-  border-radius: 50px;
-  border-left: 2px solid lightgray;
-  border-right: 2px solid lightgray;
-  border-top: 2px solid lightgray;
+  border-radius: 40px 40px 50px 50px;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  transform: rotate(10deg);
 }
 /*npm start*/
