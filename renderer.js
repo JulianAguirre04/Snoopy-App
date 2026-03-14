@@ -25,6 +25,12 @@ function typeMessage(text){
         typewriterInterval = null
     }
 
+    // text box animation, removes and re-adds the class to retrigger the animation
+    messageEl.classList.remove('bubble-pop')
+    void messageEl.offsetWidth // forces the browser to reset animation
+    messageEl.classList.add('bubble-pop')
+    //text box animation
+
     messageEl.textContent = '' //clears the box
 let i = 0
 
@@ -101,3 +107,27 @@ exit.addEventListener('click', (e) => {
 window.addEventListener('DOMContentLoaded', () => {
     updateMessage()
 })
+
+// snoopy Wave animation
+window.addEventListener('DOMContentLoaded', () => {
+    const arm = document.querySelector('.arm')
+    arm.classList.add('waving')
+    arm.addEventListener('animationend', () => {
+        arm.classList('waving')
+    })
+    updateMessage()
+})
+
+//tail wag
+function wagTail() {
+    const tail = document.querySelector('.tail')
+    tail.classList.add('wagging')
+    tail.addEventListener('animationend', () => {
+        tail.classList.remove('wagging')
+    }, { once: true }) // 'once: true' auto removes the listener after it fires
+}
+
+// wag every 5-10 seconds randomly
+setInterval(() => {
+    wagTail()
+}, Math.random() * 5000 + 5000)
