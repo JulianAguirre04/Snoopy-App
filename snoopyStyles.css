@@ -1,9 +1,11 @@
 
 body {
-  margin: 0;
-  height: 100vh;
-  background: linear-gradient(135deg, #ee8ebe, #ffc0cb);
-  position:relative;
+  background-color: pink; /* warm off-white base */
+    background-image: 
+    radial-gradient(circle, rgb(240, 217, 221) 25%, transparent 10%),
+    radial-gradient(circle, rgb(240, 217, 221) 25%, transparent 10%);
+    background-size: 25px 25px; /* controls spacing between dots */
+    background-position: 0 0, 12.5px 12.5px; /* sets the offset for the dots*/
   font-family: "Comic Sans MS", system-ui, sans-serif;
 }
 
@@ -515,5 +517,34 @@ position: absolute;
   border-right: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
   transform: rotate(10deg);
+}
+
+.fingers{
+position: absolute;
+width: 15px;
+height: 20px;
+border-radius: 40px 40px 50px 50px;
+background: ghostwhite;
+border-left:3px solid black;
+border-right:3px solid black; 
+top: 185px;
+left: 115px;
+transform: rotate(20deg);
+z-index: 10;
+}
+
+.tail{
+
+}
+
+.shadow{
+  position: absolute;
+  width: 120px;
+  height: 20px; /* much flatter */
+  top: 390px;
+  left: 110px;
+  border-radius: 50%; /* perfect ellipse */
+  background: radial-gradient(ellipse, rgba(0,0,0,0.35) 0%, transparent 100%); /* soft fade out */
+  z-index: -1;
 }
 /*npm start*/
