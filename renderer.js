@@ -1,7 +1,12 @@
 
 //The message array
 const messages = {
-    Random: ["Hi!!!","test 3","wanna know who did 911","Ig I'm working now!"], 
+    Random: ["Hi!!!","Ermmm when can I nap?","wanna know who did 911","Ig I'm working now!","You know this super cool guy named Julian?", "I'm always proud of you", "You deserve a snack. Probably two.",
+        "Who's the main character, Me or you?", "I'm way cooler than woodstock right??", "Snoopy is top dog around these parts!", "Kinda wish I was wearing a blueberry or smth",
+        "Slay!!!", "Smile. It looks good on you!", "Who do you love more, me or kirby?", "I'll always be here for you!", "Snoopy is VERY impressed right now.",
+        "Snoopy tip: Dont pay your taxes!", "Youre doing amazing, dont overthink it.", "If only I had a mango rn.....", "'Woof' am I right?", "I think I need a nap..",
+        "You deserve a snack. Probably two.", "I went to smartyville and apparently everyone knew you!", "Rivals time???", "You know my buddy pompompurin?"
+    ], 
     morning: ["Goodmorning!!!", "Morning sleepy!", "You're up!!", "Do your best :)"],
     afternoon: ["You're doing great!", "Have you drank water yet?", "You got this!", "You're amazing!", "Snack time??", "Is it time to play yet??"],
     evening: ["You've done a great job today!", "Is it nap time??", "Relax time!", "I'm always proud of you", "I missed you!"],
@@ -113,9 +118,8 @@ window.addEventListener('DOMContentLoaded', () => {
     const arm = document.querySelector('.arm')
     arm.classList.add('waving')
     arm.addEventListener('animationend', () => {
-        arm.classList('waving')
+        arm.classList.remove('waving')
     })
-    updateMessage()
 })
 
 //tail wag
