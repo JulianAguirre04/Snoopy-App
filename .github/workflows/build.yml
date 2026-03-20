@@ -2,7 +2,7 @@ name: Build Snoopy
 
 on:
   push:
-    branches: [ main ] # runs every time you push to main
+    branches: [ master ] 
 
 jobs:
   build-windows:
