@@ -10,6 +10,7 @@ function createWindow () {
         alwaysOnTop: true,
         resizable: false,
         transparent: true,
+        icon: path.join(__dirname, 'assets/Icon-img.ico'),
         webPreferences: {
             //preload: path.join(__dirname, 'mainSnoopy.js'),
             nodeIntegration: true,
@@ -21,5 +22,6 @@ function createWindow () {
     win.loadFile(path.join(__dirname, 'snoopyIndex.html')) // makes window load up the snoopy html file
     //win.webContents.openDevTools() // shows console errors/ opens devtools auto
 }
+
 // makes sure to run when everything is ready, prevents jumping the gun
 app.whenReady().then(createWindow)

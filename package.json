@@ -18,7 +18,11 @@
     "appId": "com.julian.snoopy",
     "productName": "Snoopy",
     "win": {
-      "target": "nsis"
+      "target": "nsis",
+      "icon" : "assets/Icon-img"
+    },
+    "mac": {
+      "target": "dmg"
     }
   },
   "devDependencies": {
