@@ -66,7 +66,7 @@ function getTimePeriod(date = new Date ()){
     const hour = date.getHours();
     if (hour >= 6 && hour < 12) return "morning";
     if (hour >= 12 && hour < 17) return "afternoon";
-    if(hour >= 17 && hour < 22) return "evening";
+    if(hour >= 17 && hour < 20) return "evening";
     return "Night";
 }
 
@@ -110,7 +110,7 @@ exit.addEventListener('click', (e) => {
 
 // setting intial message as time message
 window.addEventListener('DOMContentLoaded', () => {
-    updateMessage()
+    
 })
 
 // snoopy Wave animation
@@ -120,6 +120,8 @@ window.addEventListener('DOMContentLoaded', () => {
     arm.addEventListener('animationend', () => {
         arm.classList.remove('waving')
     })
+    updateBackground()
+    updateMessage()
 })
 
 //tail wag
@@ -135,3 +137,15 @@ function wagTail() {
 setInterval(() => {
     wagTail()
 }, Math.random() * 5000 + 5000)
+
+//background function
+function updateBackground() {
+    const period = getTimePeriod()
+    const sky = document.querySelector('.day-sky') 
+
+    sky.classList.remove('night-sky')
+
+    if (period === 'Night') {
+        sky.classList.add('night-sky')
+    }
+}
