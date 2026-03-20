@@ -1,0 +1,69 @@
+.day-sky{
+width:350px ;
+height: 450px;
+background-color: #a5dafc;
+z-index: -5;
+left: 0px;
+top: 0px;
+position: absolute;
+}
+
+.night-sky{
+
+}
+
+.ground{
+    width: 350px;
+    height: 60px;
+    background-color: #a3a513 ;
+    z-index: -4;
+    left: 0px;
+    top: 390px;
+    position: absolute;
+}
+
+.dogHouse-Base{
+    width:150px ;
+    height: 150px;
+    background-color:#ef2f24 ;
+    z-index: -3;
+    left: 200px;
+    top: 250px;
+    position: absolute;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    box-sizing: border-box;
+    background: repeating-linear-gradient(
+        0deg,                    /* horizontal stripes, change to 0deg for vertical */
+        #ef2f24 0px,
+        #ef2f24 40px,             /* width of red stripe */
+        black 40px,
+        black 44px   
+    );
+}
+
+.dogHouse-Roof{
+    width: 0;
+    height: 0;
+    border-left: 105px solid transparent; /* left slanted edge */
+    border-right: 105px solid #ef2f24;    /* right side is solid, this gets cut off anyway */
+    border-bottom: 100px solid #ef2f24;   /* controls roof height */
+    z-index: -2;
+    left: 140px;
+    top: 150px; /* sits just above the base */
+    position: absolute;
+    
+}
+
+.dogHouse-Roof::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 85px solid transparent;
+    border-right: 85px solid rgba(0,0,0,0.15); /* Make Sure to fix this later because stripes on roofs are a little janky*/
+    border-bottom: 50px solid rgba(0,0,0,0.15);
+    top: 0;
+    left: -85px;
+}
