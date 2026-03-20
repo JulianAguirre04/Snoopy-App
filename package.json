@@ -5,6 +5,7 @@
   "main": "mainSnoopy.js",
   "scripts": {
     "start": "electron .",
+    "build": "electron-builder",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -13,7 +14,15 @@
   },
   "author": "Julian Aguirre :)",
   "license": "ISC",
+  "build": {
+    "appId": "com.julian.snoopy",
+    "productName": "Snoopy",
+    "win": {
+      "target": "nsis"
+    }
+  },
   "devDependencies": {
-    "electron": "40.6.0"
+    "electron": "40.6.0",
+    "electron-builder": "^24.13.3"
   }
 }
